@@ -84,7 +84,7 @@ function play(userChoice) {
 
         setTimeout(() => {
             computerImg.src = "";
-        }, 1000);
+        }, 2000);
 
     }, 1000);
 }
