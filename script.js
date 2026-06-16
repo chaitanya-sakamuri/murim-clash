@@ -34,12 +34,14 @@ function play(userChoice) {
 
         computerImg.src =
             computerChoice.toLowerCase() + ".png";
+        console.log(computerChoice);
+        console.log(computerImg.src);
 
         let result = "";
 
         if (userChoice === computerChoice) {
 
-            result = "Draw!";
+            result = "CLASH!";
 
         } else if (
 
@@ -54,37 +56,41 @@ function play(userChoice) {
 
         ) {
 
-            result = "You Win!";
+            result = "victory!";
             playerScore++;
 
         } else {
 
-            result = "You Lose!";
+            result = "Defeat!";
             computerScore++;
         }
 
+       const names = {
+         Rock: "Divine Fist",
+         Paper: "Golden Bell",
+         Scissors: "Sword Intent"
+        };
+
         document.getElementById("result").innerHTML =
-            "You chose " + userChoice +
-            ", Computer chose " + computerChoice +
+            "You used " + names[userChoice] +
+            ", oppponent used " + names[computerChoice] +
             "<br>" + result;
 
         document.getElementById("score").innerText =
-            "Player: " + playerScore +
-            " | Computer: " + computerScore;
+            "Cultivator: " + playerScore +
+            " | Enemy: " + computerScore;
 
         if (playerScore === 5) {
-            alert("You won the match!");
+            alert("You have ascended to a higher realm!");
         }
 
         if (computerScore === 5) {
-            alert("Computer won the match!");
+            alert("you have suffered a loss!");
         }
 
         isAnimating = false;
 
-        setTimeout(() => {
-            computerImg.src = "";
-        }, 2000);
+
 
     }, 1000);
 }
@@ -95,7 +101,7 @@ function resetGame() {
     computerScore = 0;
 
     document.getElementById("score").innerText =
-        "Player: 0 | Computer: 0";
+        "Cultivator: 0 | Enemy: 0";
 
     document.getElementById("result").innerHTML = "";
 
