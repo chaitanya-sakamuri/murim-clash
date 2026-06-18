@@ -38,10 +38,12 @@ function play(userChoice) {
         console.log(computerImg.src);
 
         let result = "";
+        let resultColor = "";
 
         if (userChoice === computerChoice) {
 
             result = "CLASH!";
+            resultColor = "yellow";
 
         } else if (
 
@@ -57,11 +59,14 @@ function play(userChoice) {
         ) {
 
             result = "victory!";
+            resultColor = "deepskyblue";
             playerScore++;
+            
 
         } else {
 
             result = "Defeat!";
+            resultColor = "red";
             computerScore++;
         }
 
@@ -73,8 +78,10 @@ function play(userChoice) {
 
         document.getElementById("result").innerHTML =
             "You used " + names[userChoice] +
-            ", oppponent used " + names[computerChoice] +
-            "<br>" + result;
+            ", opponent used " + names[computerChoice] +
+            "<br><br><span class='battle-result' style='color:" +
+            resultColor +
+            "'>" + result + "</span>";
 
         document.getElementById("score").innerText =
             "Cultivator: " + playerScore +

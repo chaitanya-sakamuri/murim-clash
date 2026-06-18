@@ -24,6 +24,8 @@ button {
 }
 #score {
     font-size: 28px;
+    position: relative;
+    top: -20px;
 }
 #result {
     position: absolute;
@@ -32,30 +34,41 @@ button {
     transform: translateX(-50%);
 }
 .rock-btn {
-    background-color: rgb(206, 94, 2);
+    background-color: rgb(252, 3, 3);
+    color: black;
 }
 .paper-btn {
-    background-color: white;
+    background-color: rgb(255, 145, 0);
     color: black;
 }
 .scissors-btn {
-    background-color: gray;
+    background-color: rgb(25, 0, 255);
+    color: black;
 }
 .rock-btn:hover {
-    background-color: rgb(255, 94, 0);
+    background-color: rgb(241, 52, 52);
     transform: scale(1.2);
+    box-shadow:
+        0 0 20px rgb(255, 0, 0),
+        0 0 40px rgb(255, 0, 0);
 }
 .paper-btn:hover {
-    
+     background-color: rgb(255, 252, 61);
     transform: scale(1.2);
+    box-shadow:
+        0 0 20px gold,
+        0 0 40px gold;
 }
 .scissors-btn:hover {
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(20, 211, 236);
     transform: scale(1.2);
+    box-shadow:
+        0 0 20px rgb(0, 217, 255),
+        0 0 40px rgb(0, 217, 255);
 }
 .battle-area {
     position: absolute;
-    top: 380px;
+    top: 270px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -65,7 +78,7 @@ button {
 
 .choice-img {
     width: 180px;
-    height: 180px;
+    height: 270 px;
     object-fit: contain;
 }
 
@@ -73,6 +86,60 @@ button:hover {
     box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
-.reset-btn {
-    color: black;
+.battle-result {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.choice-img {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.534);
+    position: relative;
+    top: -60px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+    color: gold;
+    text-shadow:
+        0 0 10px gold,
+        0 0 20px orange;
+    position: relative;
+    top: -30px;
+    margin: 0;
+}
+
+.reset-btn{
+    position: absolute;
+    top: 460px;
+    right: 290px;
+    width: 140px;
+    height: 60px;
+    background: linear-gradient(to bottom, #444, #222);
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow:
+        0 0 10px rgba(255,215,0,0.5);
+
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover{
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 20px gold,
+        0 0 40px gold;
+}
+
+h3{
+    position: relative;
+    top: -60px;
+
 }
