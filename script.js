@@ -61,13 +61,19 @@ function play(userChoice) {
             result = "victory!";
             resultColor = "deepskyblue";
             playerScore++;
-            
+            if (playerScore % 5 === 0) {
+                alert(`⚔️ Breakthrough Achieved!\nCultivation Realm: ${playerScore} Victories`);
+            }
 
         } else {
 
             result = "Defeat!";
             resultColor = "red";
             computerScore++;
+            if (computerScore % 5 === 0) {
+                alert(`☠️ Heart Demon Emerges!\nDefeats: ${computerScore}`);
+            }            
+            
         }
 
        const names = {
@@ -87,14 +93,7 @@ function play(userChoice) {
             "Cultivator: " + playerScore +
             " | Enemy: " + computerScore;
 
-        if (playerScore === 5) {
-            alert("You have ascended to a higher realm!");
-        }
-
-        if (computerScore === 5) {
-            alert("you have suffered a loss!");
-        }
-
+        
         isAnimating = false;
 
 
