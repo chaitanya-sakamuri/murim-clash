@@ -25,7 +25,11 @@ Instead of the traditional Rock, Paper, and Scissors, players battle using uniqu
 
 ## 📸 Screenshots
 
-<img width="1535" height="511" alt="Screenshot from 2026-07-28 22-46-02" src="https://github.com/user-attachments/assets/81319047-5ee2-45c3-b5fc-ce7514605491" />
+<img width="1920" height="1080" alt="Screenshot from 2026-07-28 22-37-39" src="https://github.com/user-attachments/assets/4cd910da-f99f-4147-aa62-f019a4bff2b9" />
+
+## Game play
+
+<img width="360" height="137" alt="axmc38" src="https://github.com/user-attachments/assets/f1f0dde3-cd64-4b54-a58c-ee3d816bc568" />
 
 
 ## 🚀 Getting Started
