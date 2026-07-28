@@ -78,4 +78,4 @@ While building this project, I gained experience with:
 
 **Chaitanya**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/chaitanya-sakamuri
